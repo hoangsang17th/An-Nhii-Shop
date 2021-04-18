@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title> An Nhii Shop </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Shop An Nhii với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng." />
+        <meta name="keywords" content="Mỹ Phẩm, SunShine, Mỹ Phẩm Chính Hãng, Trị Nám, Trị Tàn Nhan, Trị Mụn, Chính Hãng, Việt Nam" />
+        <meta name="author" content="An Nhii Shop" />
+        <meta name="email" content="phsang49@gmail.com" />
+        <meta name="Version" content="v0.0.2" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    </head>
+
+    <body>
+
+        <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <img src="images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                    <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                </a>
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil uil-search text-muted"></i>
+                            </button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 300px;">
+                                <form>
+                                    <input type="text" name="search" class="form-control border bg-white" placeholder="Nhập từ khóa cần tìm kiếm...">
+                                </form>
+                            </div>
+                         </div>
+                    </li>
+                    <li class="list-inline-item mb-0 pe-1">
+                        <a href="#" class="btn btn-icon btn-soft-warning"><i class="uil uil-shopping-cart align-middle icons"></i></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown dropdown-primary">
+                            <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="uil uil-user align-middle icons"></i></button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-3" style="width: 200px;">
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-user align-middle me-1"></i> Tài Khoản</a>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-shopping-bag align-middle me-1"></i> Đơn Hàng Đã Mua</a>
+                                <div class="dropdown-divider my-3 border-top"></div>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-sign-out-alt align-middle me-1"></i> Đăng Xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Trang Chủ</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Sản Phẩm</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="documentation.html" class="sub-menu-item">Dưỡng Da</a></li>
+                                <li><a href="changelog.html" class="sub-menu-item">Trị Nám</a></li>
+                                <li><a href="components.html" class="sub-menu-item">Trị Mụn</a></li>
+                                <li><a href="widget.html" class="sub-menu-item">Trị Tàn Nhan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="indx.html" class="sub-menu-item">Blog</a></li>
+                        
+                    </ul>
+                    <ul class="buy-menu-btn d-none">
+                        <li class="list-inline-item mb-0">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="uil uil-search text-muted"></i>
+                                </button>
+                                <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 240px;">
+                                    <form>
+                                        <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Nhập từ khóa cần tìm kiếm...">
+                                    </form>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="list-inline-item mb-0 pe-1">
+                            <a href="#" class="btn btn-icon btn-soft-warning"><i class="uil uil-shopping-cart icons"></i></a>
+                        </li>
+                        <li class="list-inline-item mb-0">
+                            <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary"><i class="uil uil-user icons"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <section class="position-relative">
+            <div class="bg-home bg-animation-left d-flex align-items-center" style="background-image:url('images/shop/bg03.jpg')">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-7">
+                            <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                                <h1 class="heading mb-3">Welcome to An Nhii Shop </h1>
+                                <p class="para-desc">An Nhii Shop với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng.</p>
+                                <div class="mt-4 pt-2">
+                                    <a href="#bookroom" class="btn btn-primary"><i class="uil uil-shopping-cart"></i> Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mb-0">Sản Phẩm Nổi Bật (Cho 8sp đầu tiên)</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">New</a></li>
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-danger">Sale</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s1.jpg" class="img-fluid" alt=""></a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Branded T-Shirt</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$16.00</h6>
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1"><span class="text-success ms-1">- 5%</span></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div><!--end row-->
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" class="btn btn-primary">Xem thêm<i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end section-->
+        <!-- End -->
+        
+        <section class="section pt-5 pt-sm-0 pt-md-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2 pt-5">
+                            <h4 class="title mb-4">Bài Viết (3 bài viết)</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/blog/01.jpg" class="card-img-top rounded-top">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">LÀM THẾ NÀO ĐỂ THOÁT KHỎI CÁC VẾT NHĂN VÙNG TRÁN</a></h5>
+                                <div class="post-meta d-flex justify-content-end mt-3">
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Xem thêm <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Hoàng Sang</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 18/04/2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" class="btn btn-primary">Xem thêm <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="section" id="contact" style="background: url('images/real/build.png') bottom no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Liên Lạc !</h4>
+                            <p class="text-muted para-desc mx-auto mb-0" data-aos="fade-up" data-aos-duration="1400">Vui lòng điền vào biểu mẫu sau và chúng tôi sẽ liên hệ lại với bạn trong thời gian ngắn.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 mt-4 pt-2 order-2 order-md-1">
+                        <div class="card rounded shadow border-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-body">
+                                <div class="custom-form bg-white">
+                                    <div id="message"></div>
+                                    <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Tên <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                                        <input name="name" type="text" class="form-control ps-5" placeholder="Tên của bạn :">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Số Điện Thoại <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="phone" class="fea icon-sm icons"></i>
+                                                        <input name="phone" type="number" class="form-control ps-5" placeholder="Số điện thoại :">
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Nội Dung </label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                        <textarea name="comments" id="comments" rows="6" class="form-control ps-5" placeholder="Lời nhắn/ thắc mắc của bạn :"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center">
+                                                <div class="d-grid">
+                                                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Send Message">
+                                                    <div id="simple-msg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 mt-4 pt-2 order-1 order-md-2">
+                        <div class="title-heading ms-lg-4">
+                            <h4 class="mb-4" data-aos="fade-up" data-aos-duration="1000">Thông tin liên hệ</h4>
+                            <p class="text-muted" data-aos="fade-up" data-aos-duration="1400"><span class="text-primary fw-bold">Shop An Nhii </span>với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng.</p>
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="icon">
+                                            <i data-feather="mail" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Mail :</h6>
+                                            <a href="mailto:phsang49@gmail.com" class="text-primary">phsang49@gmail.com</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1400">
+                                        <div class="icon">
+                                            <i data-feather="phone" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Điện thoại :   </h6>
+                                            <a href="tel:0777998750" class="text-primary">0777998750</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1600">
+                                        <div class="icon">
+                                            <i data-feather="map-pin" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Địa chỉ :</h6>
+                                            <a href="">Xem trên bản đồ Google</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer bg-light border-0 footer-bar text-dark">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> An Nhii Shop. Design by <a href="https://www.facebook.com/hoangsang17th/" target="_blank" class="text-bold">Hoàng Sang</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled social-icon text-sm-end mb-0">
+                            <li class="list-inline-item mb-0"><a href="https://www.facebook.com/ShopAnNhi.7" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="https://www.instagram.com/hoangsang17th/" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="https://twitter.com/hoangsang17th" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>
