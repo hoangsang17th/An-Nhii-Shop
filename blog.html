@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title> An Nhii Shop </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Shop An Nhii với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng." />
+        <meta name="keywords" content="Mỹ Phẩm, SunShine, Mỹ Phẩm Chính Hãng, Trị Nám, Trị Tàn Nhan, Trị Mụn, Chính Hãng, Việt Nam" />
+        <meta name="author" content="An Nhii Shop" />
+        <meta name="email" content="phsang49@gmail.com" />
+        <meta name="Version" content="v0.0.2" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors.css" rel="stylesheet" id="color-opt">
+
+    </head>
+
+    <body>
+        <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <img src="images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                    <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                </a>
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil uil-search text-muted"></i>
+                            </button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 300px;">
+                                <form>
+                                    <input type="text" name="search" class="form-control border bg-white" placeholder="Nhập từ khóa cần tìm kiếm...">
+                                </form>
+                            </div>
+                         </div>
+                    </li>
+                    <li class="list-inline-item mb-0 pe-1">
+                        <a href="#" class="btn btn-icon btn-soft-warning"><i class="uil uil-shopping-cart align-middle icons"></i></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown dropdown-primary">
+                            <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="uil uil-user align-middle icons"></i></button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-3" style="width: 200px;">
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-user align-middle me-1"></i> Tài Khoản</a>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-shopping-bag align-middle me-1"></i> Đơn Hàng Đã Mua</a>
+                                <div class="dropdown-divider my-3 border-top"></div>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-sign-out-alt align-middle me-1"></i> Đăng Xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Trang Chủ</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Sản Phẩm</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="documentation.html" class="sub-menu-item">Dưỡng Da</a></li>
+                                <li><a href="changelog.html" class="sub-menu-item">Trị Nám</a></li>
+                                <li><a href="components.html" class="sub-menu-item">Trị Mụn</a></li>
+                                <li><a href="widget.html" class="sub-menu-item">Trị Tàn Nhan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="indx.html" class="sub-menu-item">Blog</a></li>
+                        
+                    </ul>
+                    <ul class="buy-menu-btn d-none">
+                        <li class="list-inline-item mb-0">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="uil uil-search text-muted"></i>
+                                </button>
+                                <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 240px;">
+                                    <form>
+                                        <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Nhập từ khóa cần tìm kiếm...">
+                                    </form>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="list-inline-item mb-0 pe-1">
+                            <a href="#" class="btn btn-icon btn-soft-warning"><i class="uil uil-shopping-cart icons"></i></a>
+                        </li>
+                        <li class="list-inline-item mb-0">
+                            <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary"><i class="uil uil-user icons"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-half bg-light d-table w-100" style="background: url('images/blog/wallpaper1.jpg') center center;">
+            <!-- <div class="bg-overlay"></div> -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title text-white h2"> Blog </h4>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item active">Blog</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- Blog STart -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/01.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Design your apps in your own way</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/02.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">How apps is changing the IT world</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/03.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Smartest Applications for Business</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/04.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">How apps is changing the IT world</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/05.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Design your apps in your own way</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/06.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Smartest Applications for Business</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/07.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Design your apps in your own way</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/08.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Smartest Applications for Business</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <!-- PAGINATION START -->
+                    <div class="col-12">
+                        <ul class="pagination justify-content-center mb-0">
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a></li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    <!-- PAGINATION END -->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+
+
+        <footer class="footer bg-light border-0 footer-bar text-dark">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> An Nhii Shop. Design by <a href="https://www.facebook.com/hoangsang17th/" target="_blank" class="text-bold">Hoàng Sang</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled social-icon text-sm-end mb-0">
+                            <li class="list-inline-item mb-0"><a href="https://www.facebook.com/ShopAnNhi.7" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="https://www.instagram.com/hoangsang17th/" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="https://twitter.com/hoangsang17th" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>

@@ -1,13 +1,3 @@
-/* Template Name: Landrick - Saas & Software Landing Page Template
-   Author: Shreethemes
-   E-mail: shreethemes@gmail.com
-   Created: August 2019
-   Version: 3.1.1
-   Updated: March 2021
-   File Description: Common JS file of the template(plugins.init.js)
-*/
-
-
 /*********************************/
 /*         INDEX                 */
 /*================================
@@ -240,7 +230,7 @@ try {
 try {
     if(document.getElementById("days")){
         // The data/time we want to countdown to
-        var eventCountDown = new Date("December 25, 2022 16:37:52").getTime();
+        var eventCountDown = new Date("June 03, 2021 17:30:00").getTime();
 
         // Run myfunc every second
         var myfunc = setInterval(function () {

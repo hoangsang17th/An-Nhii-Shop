@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8" />
+        <title> An Nhii Shop </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Shop An Nhii với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng." />
+        <meta name="keywords" content="Mỹ Phẩm, SunShine, Mỹ Phẩm Chính Hãng, Trị Nám, Trị Tàn Nhan, Trị Mụn, Chính Hãng, Việt Nam" />
+        <meta name="author" content="An Nhii Shop" />
+        <meta name="email" content="phsang49@gmail.com" />
+        <meta name="Version" content="v0.0.2" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors.css" rel="stylesheet" id="color-opt">
+
+    </head>
+
+    <body>
+        
+        <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <img src="images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                    <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                </a>
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil uil-search text-muted"></i>
+                            </button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 300px;">
+                                <form>
+                                    <input type="text" name="search" class="form-control border bg-white" placeholder="Nhập từ khóa cần tìm kiếm...">
+                                </form>
+                            </div>
+                         </div>
+                    </li>
+                    <li class="list-inline-item mb-0 pe-1">
+                        <a href="#" class="btn btn-icon btn-soft-warning"><i class="uil uil-shopping-cart align-middle icons"></i></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown dropdown-primary">
+                            <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="uil uil-user align-middle icons"></i></button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-3" style="width: 200px;">
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-user align-middle me-1"></i> Tài Khoản</a>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-shopping-bag align-middle me-1"></i> Đơn Hàng Đã Mua</a>
+                                <div class="dropdown-divider my-3 border-top"></div>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-sign-out-alt align-middle me-1"></i> Đăng Xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Trang Chủ</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Sản Phẩm</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="documentation.html" class="sub-menu-item">Dưỡng Da</a></li>
+                                <li><a href="changelog.html" class="sub-menu-item">Trị Nám</a></li>
+                                <li><a href="components.html" class="sub-menu-item">Trị Mụn</a></li>
+                                <li><a href="widget.html" class="sub-menu-item">Trị Tàn Nhan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="indx.html" class="sub-menu-item">Blog</a></li>
+                        
+                    </ul>
+                    <ul class="buy-menu-btn d-none">
+                        <li class="list-inline-item mb-0">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="uil uil-search text-muted"></i>
+                                </button>
+                                <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 240px;">
+                                    <form>
+                                        <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Nhập từ khóa cần tìm kiếm...">
+                                    </form>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="list-inline-item mb-0 pe-1">
+                            <a href="#" class="btn btn-icon btn-soft-warning"><i class="uil uil-shopping-cart icons"></i></a>
+                        </li>
+                        <li class="list-inline-item mb-0">
+                            <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary"><i class="uil uil-user icons"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Invoice Start -->
+        <section class="bg-invoice bg-light">
+            <div class="container">
+                <div class="row mt-5 pt-4 pt-sm-0 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card shadow rounded border-0">
+                            <div class="card-body">
+                                <div class="invoice-top pb-4 border-bottom">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="logo-invoice mb-2">AnNhii<span class="text-primary">.</span></div>
+                                            <a href="javascript:void(0)" class="text-primary h6"><i data-feather="link" class="fea icon-sm text-muted me-2"></i>www.annhii.shop</a>
+                                        </div>
+                                    </div><!--end row-->
+                                </div>
+    
+                                <div class="invoice-middle py-4">
+                                    <h5>Thông tin đơn hàng :</h5>
+                                    <div class="row mb-0">
+                                        <div class="col-md-6 order-2 order-md-1">
+                                            <dl class="row">
+                                                <dt class="col-md-3 col-5 fw-normal">ID Đơn hàng :</dt>
+                                                <dd class="col-md-9 col-7 text-muted fw-bold">AN-477</dd>
+                                                
+                                                <dt class="col-md-3 col-5 fw-normal">Họ tên :</dt>
+                                                <dd class="col-md-9 col-7 text-muted">Hoàng Sang</dd>
+                                                
+                                                <dt class="col-md-3 col-5 fw-normal">Địa chỉ :</dt>
+                                                <dd class="col-md-9 col-7 text-muted">
+                                                    <p class="mb-0">Đà Nẵng, Việt Nam</p>
+                                                </dd>
+                                                
+                                                <dt class="col-md-3 col-5 fw-normal">Điện thoại :</dt>
+                                                <dd class="col-md-9 col-7 text-muted">0332148505</dd>
+                                            </dl>
+                                        </div>
+    
+                                        <div class="col-md-6 order-md-2 order-1 mt-2 mt-sm-0">
+                                            <dl class="row mb-0">
+                                                <dt class="col-md-4 col-5 fw-normal">Ngày đặt :</dt>
+                                                <dd class="col-md-8 col-7 text-muted">26/03/2021</dd>
+                                            </dl>
+                                            <dl class="row mb-0">
+                                                <dt class="col-md-4 col-5 fw-normal">Phương thức :</dt>
+                                                <dd class="col-md-8 col-7 text-muted">Chuyển khoản ngân hàng</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="invoice-table pb-4">
+                                    <div class="table-responsive bg-white shadow rounded">
+                                        <table class="table mb-0 table-center invoice-tb">
+                                            <thead class="bg-light">
+                                                <tr>
+                                                    <th scope="col" class="border-bottom text-start">#</th>
+                                                    <th scope="col" class="border-bottom text-start">Sản Phẩm</th>
+                                                    <th scope="col" class="border-bottom">Số lượng</th>
+                                                    <th scope="col" class="border-bottom">Giá</th>
+                                                    <th scope="col" class="border-bottom">Tổng</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="text-start">1</th>
+                                                    <td class="text-start">Inclusive Insights</td>
+                                                    <td>2</td>
+                                                    <td>$ 2600</td>
+                                                    <td>$ 5200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text-start">2</th>
+                                                    <td class="text-start">Handy Guide</td>
+                                                    <td>1</td>
+                                                    <td>$ 3660</td>
+                                                    <td>$ 3660</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text-start">3</th>
+                                                    <td class="text-start">Premiere Product</td>
+                                                    <td>3</td>
+                                                    <td>$ 4580</td>
+                                                    <td>$ 13740</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-5 ms-auto">
+                                            <ul class="list-unstyled h6 fw-normal mt-4 mb-0 ms-md-5 ms-lg-4">
+                                                <li class="text-muted d-flex justify-content-between">Tạm tính :<span>250.000đ</span></li>
+                                                <li class="text-muted d-flex justify-content-between">Phí ship :<span> 30.000đ</span></li>
+                                                <li class="d-flex justify-content-between">Tổng :<span>280.000đ</span></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div>
+    
+                                <div class="invoice-footer border-top pt-4">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="text-muted text-center mb-0">Quý khách vui lòng chuyển khoản vào tài khoản ngân hàng sau của AnNhii.</div>                                            </div>
+                                        </div>
+    
+                                        <div class="col-md-12 mt-4">
+                                            <div class="table-responsive rounded">
+                                                <table class="table table-striped">
+                                                    <tr>
+                                                        <th>Tài khoản hưởng thụ:</th>
+                                                        <td>Phạm Hoàng Sang</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Ngân hàng:</th>
+                                                        <td>Ngân hàng TMCP Ngoại thương VCB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Số tài khoản:</th>
+                                                        <td>5050148454917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Nội dung:</th>
+                                                        <td>Thanh toán đơn hàng ED-65897</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center mt-2">
+                                            <div class="icon d-flex align-items-center justify-content-center bg-soft-primary rounded-circle mx-auto" style="height: 90px; width:90px;">
+                                                <i class="uil uil-thumbs-up align-middle h1 mb-0"></i>
+                                            </div>
+                                            <h1 class="mt-4 mb-2 fw-bold">Thank You</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        
+        
+        <footer class="footer bg-light border-0 footer-bar text-dark">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> An Nhii Shop. Design by <a href="https://www.facebook.com/hoangsang17th/" target="_blank" class="text-bold">Hoàng Sang</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled social-icon text-sm-end mb-0">
+                            <li class="list-inline-item mb-0"><a href="https://www.facebook.com/ShopAnNhi.7" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="https://www.instagram.com/hoangsang17th/" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="https://twitter.com/hoangsang17th" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+
+        
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- tobii js -->
+        <script src="js/tobii.min.js"></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>

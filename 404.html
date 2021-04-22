@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -16,14 +16,12 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- Slider -->               
-        <link rel="stylesheet" href="css/tiny-slider.css"/> 
-        <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Main Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="css/colors.css" rel="stylesheet" id="color-opt">
-       
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
     </head>
 
     <body>
@@ -112,135 +110,19 @@
                 </div>
             </div>
         </header>
-        
-        <!-- Hero Start -->
-        <section class="bg-half bg-light d-table w-100">
+
+        <!-- ERROR PAGE -->
+        <section class="bg-home d-flex align-items-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="page-next-level">
-                            <h4 class="title"> All Products </h4>
-                            <div class="page-next">
-                                <nav aria-label="breadcrumb" class="d-inline-block">
-                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="index-shop.html">Shop</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Products</li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-8 col-md-12 text-center">
+                        <img src="images/shop/illustrator/404.svg" class="img-fluid" alt="">
+                        <p class="text-muted para-desc mx-auto h4">Xin lỗi, trang bạn đang tìm kiếm không tồn tại!</p>
+                    </div><!--end col-->
                 </div>
-            </div>
+            </div><!--end container-->
         </section>
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
-            </div>
-        </div>
-        
-        
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card border-0 sidebar sticky-bar">
-                            <div class="card-body p-0">
-                                <!-- SEARCH -->
-                                <div class="widget">
-                                    <form role="search" method="get">
-                                        <div class="input-group mb-3 border rounded">
-                                            <input type="text" id="s" name="s" class="form-control border-0" placeholder="Nhập từ khóa cần tìm kiếm...">
-                                            <button type="submit" class="input-group-text bg-white border-0" id="searchsubmit"><i class="uil uil-search"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- SEARCH -->
 
-                                <!-- Categories -->
-                                <div class="widget mt-4 pt-2">
-                                    <h5 class="widget-title">Danh Mục</h5>
-                                    <ul class="list-unstyled mt-4 mb-0 blog-categories">
-                                        <li><a href="jvascript:void(0)">Men</a></li>
-                                        <li><a href="jvascript:void(0)">Women</a></li>
-                                        <li><a href="jvascript:void(0)">Electronics</a></li>
-                                        <li><a href="jvascript:void(0)">Jewellery</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-9 col-md-8 col-12 mt-5 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="row align-items-center">
-                            <div class="col-6">
-                                <div class="section-title">
-                                    <h5 class="mb-0">Sắp xếp theo: </h5>
-                                </div>
-                            </div>
-        
-                            <div class="col-6">
-                                <div class="d-flex justify-content-end">
-                                    <div class="form custom-form">
-                                        <div class="mb-0">
-                                            <select class="form-select form-control" aria-label="Default select example" id="Sortbylist-job">
-                                                <option selected>Phổ biến</option>
-                                                <option>Hàng mới</option>
-                                                <option>Giá thấp</option>
-                                                <option>Giá cao</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                                <div class="card shop-list border-0 position-relative">
-                                    <ul class="label list-unstyled mb-0">
-                                        <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">New</a></li>
-                                        <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-danger">Sale</a></li>
-                                    </ul>
-                                    <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="shop-product-detail.html"><img src="images/shop/product/s1.jpg" class="img-fluid" alt=""></a>
-                                        <ul class="list-unstyled shop-icons">
-                                            <li class="mt-2"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content pt-4 p-2">
-                                        <a href="shop-product-detail.html" class="text-dark product-name h6">Branded T-Shirt</a>
-                                        <div class="d-flex justify-content-between mt-1">
-                                            <h6 class="text-muted small fst-italic mb-0 mt-1">$16.00</h6>
-                                            <h6 class="text-muted small fst-italic mb-0 mt-1"><span class="text-success ms-1">- 5%</span></h6>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            <!-- PAGINATION START -->
-                            <div class="col-12 mt-4 pt-2">
-                                <ul class="pagination justify-content-center mb-0">
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous"><i class="mdi mdi-arrow-left"></i> Prev</a></li>
-                                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next <i class="mdi mdi-arrow-right"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- PAGINATION END -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
 
         <footer class="footer bg-light border-0 footer-bar text-dark">
             <div class="container text-center">
@@ -260,15 +142,11 @@
                 </div>
             </div>
         </footer>
-        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-
 
         
 
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Slider -->
-        <script src="js/tiny-slider.js"></script>
         <!-- Icons -->
         <script src="js/feather.min.js"></script>
         <!-- Main Js -->
