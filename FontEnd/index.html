@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Hoàng Sang Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+        <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="email" content="shreethemes@gmail.com" />
+        <meta name="website" content="http://shreethemes.in" />
+        <meta name="Version" content="v3.0.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="css/tiny-slider.css"/>
+        <!-- Main Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    </head>
+
+    <body>
+        
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                    <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                </a>
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil uil-search text-muted"></i>
+                            </button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 300px;">
+                                <form>
+                                    <input type="text" id="text2" name="name" class="form-control border bg-white" placeholder="Search...">
+                                </form>
+                            </div>
+                         </div>
+                    </li>
+                    <li class="list-inline-item mb-0 pe-1">
+                        <a href="#" class="btn btn-icon btn-soft-primary"><i class="uil uil-shopping-cart align-middle icons"></i></a>
+                    </li>
+                    <li class="list-inline-item mb-0 pe-1">
+                        <a href="#" class="btn btn-icon btn-soft-primary"><i class="mdi mdi-stack-overflow mdi-18px icons"></i></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown dropdown-primary">
+                            <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="uil uil-user align-middle icons"></i></button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-3" style="width: 200px;">
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-user align-middle me-1"></i> Account</a>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-clipboard-notes align-middle me-1"></i> Order History</a>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-arrow-circle-down align-middle me-1"></i> Download</a>
+                                <div class="dropdown-divider my-3 border-top"></div>
+                                <a class="dropdown-item text-dark" href="#"><i class="uil uil-sign-out-alt align-middle me-1"></i> Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul><!--end login button-->
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Trang Chủ</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Sản Phẩm</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="documentation.html" class="sub-menu-item">Documentation</a></li>
+                                <li><a href="changelog.html" class="sub-menu-item">Changelog</a></li>
+                                <li><a href="components.html" class="sub-menu-item">Components</a></li>
+                                <li><a href="widget.html" class="sub-menu-item">Widget</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="indx.html" class="sub-menu-item">Bài Viết</a></li>
+                        
+                    </ul><!--end navigation menu-->
+                    <ul class="buy-menu-btn d-none">
+                        <li class="list-inline-item mb-0">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="uil uil-search text-muted"></i>
+                                </button>
+                                <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 240px;">
+                                    <form>
+                                        <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Search...">
+                                    </form>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="list-inline-item mb-0 pe-1">
+                            <a href="#" class="btn btn-icon btn-soft-primary"><i class="uil uil-cart icons"></i></a>
+                        </li>
+                        <li class="list-inline-item mb-0 pe-1">
+                            <a href="#" class="btn btn-icon btn-soft-primary"><i class="mdi mdi-stack-overflow mdi-18px icons"></i></a>
+                        </li>
+                        <li class="list-inline-item mb-0">
+                            <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary" data-bs-toggle="modal" data-bs-target="#loginform"><i class="uil uil-user icons"></i></a>
+                        </li>
+                    </ul><!--end login button-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header>
+        
+        <section class="home-slider position-relative">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="bg-home bg-animation-left d-flex align-items-center" style="background-image:url('images/hotel/bg01.jpg')">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                                            <h1 class="heading mb-3">Enjoy Better Holidays With Landrick Resort</h1>
+                                            <p class="para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                            <div class="mt-4 pt-2">
+                                                <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="btn btn-icon btn-pills btn-primary lightbox"><i data-feather="video" class="icons"></i></a><span class="fw-bold text-uppercase small align-middle ms-2">Watch Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="bg-home bg-animation-left d-flex align-items-center" style="background-image:url('images/hotel/bg02.jpg')">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                                            <h1 class="heading mb-3">Enjoy The World of Relaxation</h1>
+                                            <p class="para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                            <div class="mt-4 pt-2">
+                                                <a href="page-aboutus.html" class="btn btn-primary"><i class="uil uil-briefcase"></i> Aboutus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="bg-home bg-animation-left d-flex align-items-center" style="background-image:url('images/hotel/bg03.jpg')">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                                            <h1 class="heading mb-3">Welcome Landrick <br> A Stunning Hotel</h1>
+                                            <p class="para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                            <div class="mt-4 pt-2">
+                                                <a href="#bookroom" class="btn btn-primary"><i class="uil uil-home"></i> Book now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Start -->
+        <section class="section">
+            <!-- Start Most Viewed Products -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mb-0">Most Viewed Products</h5>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-primary">New</a></li>
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Featured</a></li>
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s1.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-1.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Branded T-Shirt</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$16.00 <del class="text-danger ms-2">$21.00</del> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s2.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Shopping Bag</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$21.00 <del class="text-danger ms-2">$25.00</del> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s3.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-3.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Elegent Watch</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$5.00 <span class="text-success ms-1">30% off</span> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s4.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-4.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Casual Shoes</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$18.00 <del class="text-danger ms-2">$22.00</del> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s5.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-5.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Earphones</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$3.00</h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s6.jpg" class="img-fluid" alt=""></a>
+                                <div class="overlay-work">
+                                    <div class="py-2 bg-soft-dark rounded-bottom out-stock">
+                                        <h6 class="mb-0 text-center">Out of stock</h6>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Elegent Mug</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$4.50 <del class="text-danger ms-2">$6.50</del> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s7.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-7.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Sony Headphones</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$9.99 <span class="text-success ms-2">20% off</span> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Featured</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="shop-product-detail.html"><img src="images/shop/product/s8.jpg" class="img-fluid" alt=""></a>
+                                <a href="shop-product-detail.html" class="overlay-work">
+                                    <img src="images/shop/product/s-8.jpg" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="shop-product-detail.html" class="text-dark product-name h6">Wooden Stools</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$22.00 <del class="text-danger ms-2">$25.00</del> </h6>
+                                    <ul class="list-unstyled text-warning mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" class="btn btn-primary">See More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end section-->
+        <!-- End -->
+        
+        <!-- News Start -->
+        <section class="section pt-5 pt-sm-0 pt-md-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">Latest News</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/hotel/bg01.jpg" class="card-img-top rounded-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Design your apps in your own way</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/hotel/bg02.jpg" class="card-img-top rounded-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">How apps is changing the IT world</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/hotel/bg03.jpg" class="card-img-top rounded-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Smartest Applications for Business</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" class="btn btn-primary">See More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Blog End -->
+
+        <section class="section" id="contact" style="background: url('images/real/build.png') bottom no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Get In Touch !</h4>
+                            <p class="text-muted para-desc mx-auto mb-0" data-aos="fade-up" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 mt-4 pt-2 order-2 order-md-1">
+                        <div class="card rounded shadow border-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-body">
+                                <div class="custom-form bg-white">
+                                    <div id="message"></div>
+                                    <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                                        <input name="name" id="name" type="text" class="form-control ps-5" placeholder="First Name :">
+                                                    </div>
+                                                </div>
+                                            </div><!--end col-->
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                        <input name="email" id="email2" type="email" class="form-control ps-5" placeholder="Your email :">
+                                                    </div>
+                                                </div> 
+                                            </div><!--end col-->
+                                            <div class="col-lg-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Comments</label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                        <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Your Message :"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--end row-->
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center">
+                                                <div class="d-grid">
+                                                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Send Message">
+                                                    <div id="simple-msg"></div>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                    </form><!--end form--> 
+                                </div><!--end custom-form-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 mt-4 pt-2 order-1 order-md-2">
+                        <div class="title-heading ms-lg-4">
+                            <h4 class="mb-4" data-aos="fade-up" data-aos-duration="1000">Contact Details</h4>
+                            <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="icon">
+                                            <i data-feather="mail" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Email</h6>
+                                            <a href="mailto:contact@example.com" class="text-primary">contact@example.com</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1400">
+                                        <div class="icon">
+                                            <i data-feather="phone" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Phone</h6>
+                                            <a href="tel:+152534-468-854" class="text-primary">+152 534-468-854</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1600">
+                                        <div class="icon">
+                                            <i data-feather="map-pin" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Location</h6>
+                                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" data-type="iframe" class="video-play-icon text-primary lightbox">View on Google map</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div>
+        </section>
+
+        <!-- Footer Start -->
+        <footer class="footer bg-light border-0 footer-bar text-dark">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> An Nhii Shop. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="http://shreethemes.in/" target="_blank" class="text-reset">Hoàng Sang</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled social-icon text-sm-end mb-0">
+                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="rounded"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+        
+
+
+
+
+
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+        
+
+        
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>
